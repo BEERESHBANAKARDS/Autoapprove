@@ -1,0 +1,13 @@
+services:
+  drone-vc-m:
+    build: .
+    environment:
+      API_ID: $API_ID  
+      API_HASH: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN 
+      CHAT_ID: $CHAT_ID
+      APPROVED_WELCOME: $APPROVED_WELCOME
+      APPROVED_WELCOME_TEXT: $APPROVED_WELCOME_TEXT
+    resources:
+      cpu: 1000m
+      memory: 3Gi
